@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pythontest:
+    build: .
+    container_name: 'pythontest'
+    working_dir: '/root/opt/task'
+    tty: true
+    volumes:
+      - ./task:/root/opt/task
